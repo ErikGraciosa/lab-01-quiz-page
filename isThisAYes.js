@@ -3,7 +3,8 @@
 
 
 export function isThisAYes(input) {
-    if (input === 'yes') {
+    const letterCheck = input.charAt(0).toUpperCase();
+    if (letterCheck === 'Y') {
         return true;
     } else {
         return false;

@@ -16,7 +16,7 @@
 ###Stretch goals
 1) apply additional styling "borders, alignment, margin, padding, and so on."
 1) Search for an online HTML validator and submit code to it
-1) Visit link to chrom explaination of built-in accessibility auditing-tools, modify code until you achieve a ratio that gets two check marks.
+1) Visit link to chrome explaination of built-in accessibility auditing-tools, modify code until you achieve a ratio that gets two check marks.
 
 # From lab page
 Points Break Down

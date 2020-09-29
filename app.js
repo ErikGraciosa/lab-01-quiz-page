@@ -7,16 +7,15 @@ const quizResults = document.getElementById('quiz-results');
 
 // initialize state
 let correctAnswers = 0; //Update this variable +1 when user answers question correctly.
-console.log('did I get here?1');
-
 
 
 //Click button, prompt for name
 // set event listeners to update state and DOM
 buttonQuiz.addEventListener('click', () => {
+    //This isn't refreshing, seems to just move past without updating
     quizResults.textContent = '';
     
-    console.log('did I get here?2');
+    
     
     if (confirm('Do you want to proceed with the quiz?')){
         

@@ -1,10 +1,10 @@
 
 body {
-    --color1: #ffffff;
-    --color2: #ffffff;
-    --color3: #ffffff;
-    --color4: #ffffff;
-    --color5: #ffffff;
+    --color1: black;
+    --color2: black;
+    --color3: black;;
+    --color4: black;
+    --color5: black;
 
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     /* --color1: hsla(349, 69%, 76%, 1);
@@ -21,18 +21,51 @@ body {
     
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
+    /* --gutter: 30px;
+    --footer-height: 25px; */
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-image: url(https://techcrunch.com/wp-content/uploads/2014/12/matrix.jpg?w=1000);
 }
 
 * {
-    border: solid black 2px;
+    /* border: solid white 2px; */
+    background-color: black;
+    color: rgb(9, 233, 9);
 }
 
+#img {
+    position: fixed; 
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
 
+#background-images {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-section-overlay {
+    /* position: fixed; Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 650px; /* Full width (cover the whole page) */
+    height: 750px;
+    ; /* Full height (cover the whole page) */
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    background-color: rgba(0,0,0,1); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    /* border: solid white 2px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 80px;
+  }
 
 main {
     display: flex;
@@ -40,6 +73,8 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-color: black;
+    height: 850px;
 }
 
 section {
@@ -60,6 +95,7 @@ section {
 #bullet-lists {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     border: solid black 2px;
 }
 
@@ -105,13 +141,15 @@ button {
     color: rgb(9, 233, 9);
     border: solid rgb(9, 233, 9) 3px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 content {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px;
 }
 
 p {
